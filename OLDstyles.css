@@ -1,14 +1,13 @@
 /* Root variables */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 :root {
-  --color-primary: #c0bebe;
-  --color-secondary: #928f8f;
-  --color-accent: #ffd54f;
-  --color-background: #ffffff;
-  --color-text: #888b87;
-  --color-light: #f1f8e9;
-  --color-sky: #696b6a;
-  --color-soft: #6b69697a;
+  --color-primary: #78909c;
+  --color-secondary: #b0bec5;
+  --color-accent: #66bb6a;
+  --color-background: #f8f9fa;
+  --color-text: #455a64;
+  --color-light: #eceff1;
+  --color-sky: #838383;
   --font-main: "Nunito", sans-serif;
   --gradient-primary: linear-gradient(
     to right,
@@ -62,7 +61,7 @@ a {
 header {
   background: var(--gradient-primary);
   color: var(--color-background);
-  padding: 0.7rem 0;
+  padding: 1rem 0;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -70,10 +69,9 @@ header {
 }
 
 .tagline {
-  font-size: 0.78rem;
+  font-size: 0.64rem;
   font-weight: normal;
   color: #f3f3f3;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.466);
 }
 
 nav {
@@ -104,7 +102,6 @@ nav {
 .nav-links {
   display: flex;
   list-style: none;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.466);
 }
 
 .nav-links li {
@@ -151,7 +148,7 @@ nav {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: var(--color-sky);
+  background: var(--gradient-primary);
   opacity: 0.7;
   z-index: 1;
 }
@@ -242,7 +239,7 @@ nav {
 }
 
 .services-overlay {
-  background-color: rgba(253, 254, 255, 0.829);
+  background-color: rgba(248, 249, 250, 0.8);
   padding: 3rem 0;
 }
 
@@ -250,7 +247,7 @@ nav {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: var(--color-text);
+  color: var(--color-primary);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -262,7 +259,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   color: var(--color-text);
-  text-shadow: 1px 1px 2px rgba(20, 20, 20, 0.384);
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
   font-weight: 500;
 }
 
@@ -293,14 +290,14 @@ nav {
   width: 50px;
   height: 50px;
   margin-bottom: 1rem;
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
 .index-service-card h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   text-align: center;
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
 .index-service-card ul {
@@ -343,13 +340,14 @@ nav {
 }
 
 .contact-form {
-  background-color: var(--color-soft);
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 2rem;
   border-radius: 5px;
   box-shadow: var(--shadow-standard);
   grid-column: 2 / 3;
   grid-row: 1 / 4;
 }
+
 .contact-info h3,
 .contact-form h3 {
   color: var(--color-light);
@@ -376,7 +374,7 @@ nav {
   padding: 0.75rem;
   border: 1px solid var(--color-light);
   border-radius: 3px;
-  background-color: var(--color-soft);
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--color-background);
   font-size: 16px;
 }
@@ -513,7 +511,7 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--color-soft);
+  background-color: rgba(81, 185, 255, 0.37);
 }
 
 .emdr-page .emdr-intro .container {
@@ -578,79 +576,7 @@ footer {
   display: table;
   clear: both;
 }
-
-/* Trauma Page Styles */
-.trauma-page {
-  background: var(--gradient-secondary);
-  padding-top: 60px;
-}
-
-.trauma-page .trauma-intro {
-  position: relative;
-  padding: 5rem 0;
-  text-align: center;
-  background-image: url("assetsP/ComfyUI_00810_.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-.trauma-page .trauma-intro::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: var(--color-soft);
-}
-
-.trauma-page .trauma-intro .container {
-  position: relative;
-  z-index: 1;
-  color: #ffffff;
-}
-
-.trauma-intro .trauma-title {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.863);
-}
-
-.trauma-intro .trauma-full-title {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-top: 0.5rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.781);
-}
-
-.trauma-intro p {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.685);
-}
-
-.trauma-content {
-  padding: 2rem 0;
-  background: var(--gradient-secondary);
-  position: relative;
-  overflow: hidden;
-}
-
-.trauma-content::before,
-.trauma-content::after {
-  content: "";
-  display: table;
-  clear: both;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-}
-
+.ptsd-section,
 .trauma-section {
   position: relative;
   overflow: hidden;
@@ -661,39 +587,15 @@ footer {
   box-shadow: var(--shadow-standard);
 }
 
-.trauma-section::after {
-  content: "";
-  display: table;
-  clear: both;
+.trauma-section-image {
+  float: right;
+  max-width: 40%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-standard);
 }
 
-.trauma-section h2,
-.trauma-section p,
-.trauma-section ul,
-.trauma-section ol {
-  color: var(--color-text);
-}
-
-.trauma-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid var(--color-text);
-  padding-bottom: 0.5rem;
-}
-
-.trauma-section p {
-  margin-bottom: 1rem;
-}
-
-.trauma-section ul,
-.trauma-section ol {
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.trauma-section li {
-  margin-bottom: 0.5rem;
-}
 @media (max-width: 768px) {
   .trauma-section-image {
     float: none;
@@ -701,6 +603,46 @@ footer {
     max-width: 100%;
     margin: 0 auto 20px;
   }
+}
+.resources-section {
+  background-color: var(--color-light);
+  color: var(--color-text);
+  border-radius: 8px;
+  box-shadow: var(--shadow-standard);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.emdr-section h2,
+.ptsd-section h2,
+.trauma-section h2,
+.resources-section h2 {
+  color: var(--color-primary);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--color-text);
+  padding-bottom: 0.5rem;
+}
+
+.emdr-section p,
+.ptsd-section p,
+.trauma-section p,
+.resources-section p {
+  margin-bottom: 1rem;
+}
+
+.emdr-section ul,
+.emdr-section ol,
+.ptsd-section ul,
+.ptsd-section ol,
+.trauma-section ul,
+.trauma-section ol,
+.resources-section ul,
+.emdr-section li,
+.ptsd-section li,
+.trauma-section li,
+.resources-section li {
+  margin-bottom: 0.5rem;
 }
 .emdr-img {
   float: right;
@@ -782,41 +724,53 @@ footer {
 }
 
 /* PTSD Page Styles */
-.ptsd-page {
+.ptsd-page,
+.trauma-page {
   background: var(--gradient-secondary);
   padding-top: 60px;
 }
 
-.ptsd-page .ptsd-intro {
+.ptsd-intro,
+.trauma-intro {
   position: relative;
-  padding: 3rem 0;
+  padding: 6rem 0;
   text-align: center;
-  background-image: url("assetsP/ComfyUI_00793_.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
 }
 
-.ptsd-page .ptsd-intro::before {
+.ptsd-intro {
+  background-image: url("assetsP/ComfyUI_00793_.webp");
+}
+
+.trauma-intro {
+  background-image: url("assetsP/ComfyUI_00810_.webp");
+}
+
+.ptsd-intro::before,
+.trauma-intro::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--color-soft);
+  background-color: rgba(81, 185, 255, 0.26);
 }
 
-.ptsd-page .ptsd-intro .container {
+.ptsd-intro .container,
+.trauma-intro .container {
   position: relative;
   z-index: 1;
   color: #ffffff;
 }
 
-.ptsd-intro .ptsd-title {
+.ptsd-intro .ptsd-title,
+.trauma-intro .trauma-title {
   font-size: 3rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
   line-height: 1.2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.863);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .ptsd-intro .ptsd-full-title {
@@ -827,143 +781,20 @@ footer {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.781);
 }
 
-.ptsd-intro p {
+.ptsd-intro p,
+.trauma-intro p {
   font-size: 1.2rem;
   max-width: 800px;
   margin: 0 auto;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.685);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-.ptsd-content {
+.ptsd-content,
+.trauma-content {
   padding: 2rem 0;
   background: var(--gradient-secondary);
-  position: relative;
-  overflow: hidden;
 }
 
-.ptsd-content::before,
-.ptsd-content::after {
-  content: "";
-  display: table;
-  clear: both;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.ptsd-section {
-  position: relative;
-  overflow: hidden;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  background-color: var(--color-light);
-  border-radius: 8px;
-  box-shadow: var(--shadow-standard);
-}
-
-.ptsd-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.trauma-section-image {
-  float: right;
-  max-width: 30%;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: var(--shadow-standard);
-}
-
-@media (max-width: 768px) {
-  .trauma-section-image {
-    float: none;
-    display: block;
-    max-width: 100%;
-    margin: 0 auto 20px;
-  }
-}
-
-.ptsd-page .ptsd-intro .container {
-  position: relative;
-  z-index: 1;
-  color: #ffffff;
-}
-
-.ptsd-intro .ptsd-title {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.863);
-}
-
-.ptsd-intro .ptsd-full-title {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-top: 0.5rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.781);
-}
-
-.ptsd-intro p {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.685);
-}
-
-.ptsd-content {
-  padding: 2rem 0;
-  background: var(--gradient-secondary);
-  position: relative;
-  overflow: hidden;
-}
-
-.ptsd-content::before,
-.ptsd-content::after {
-  content: "";
-  display: table;
-  clear: both;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.ptsd-section {
-  position: relative;
-  overflow: hidden;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  background-color: var(--color-light);
-  border-radius: 8px;
-  box-shadow: var(--shadow-standard);
-}
-
-.ptsd-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* RESOURCES section */
-.resources-section {
-  background-color: var(--color-light);
-  color: var(--color-text);
-  border-radius: 8px;
-  box-shadow: var(--shadow-standard);
-  padding: 2rem;
-  margin-bottom: 2rem;
-}
-.resources-section ol {
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
-}
 /* Resources Page */
 .resources-page {
   padding-top: 30px;
@@ -971,7 +802,7 @@ footer {
 
 .resources-intro {
   position: relative;
-  padding: 5rem 0;
+  padding: 3rem 0;
   text-align: center;
   background-image: url("assetsP/ComfyUI_00797_.webp");
   background-size: cover;
@@ -984,7 +815,7 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--color-soft);
+  background-color: rgba(81, 185, 255, 0.26);
 }
 
 .resources-intro .container {
@@ -1038,7 +869,7 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--color-soft);
+  background-color: rgba(81, 185, 255, 0.295);
 }
 
 .services-intro .container {
@@ -1109,7 +940,7 @@ footer {
 }
 
 .service-info h2 {
-  color: var(--color-text);
+  color: var(--color-primary);
   margin-bottom: 1rem;
 }
 
@@ -1301,37 +1132,11 @@ footer {
   transition: var(--transition-standard);
   font-size: 1.1rem;
 }
-@media (max-width: 480px) {
-  .container {
-    width: 95%;
-  }
 
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-  .index-services-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .index-service-card {
-    padding: 1rem;
-  }
-
-  .index-service-card .service-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .index-service-card h3 {
-    font-size: 1.1rem;
-  }
-
-  .index-service-card li {
-    font-size: 0.85rem;
-  }
+.btn:hover {
+  background-color: var(--color-secondary);
 }
+
 /* Media Queries */
 @media (max-width: 1024px) {
   .hero h2 {
@@ -1469,4 +1274,27 @@ footer {
   .index-service-card li {
     font-size: 0.85rem;
   }
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
 }
