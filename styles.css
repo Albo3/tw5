@@ -1,8 +1,8 @@
 /* Root variables */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 :root {
-  --color-primary: #c0bebe;
-  --color-secondary: #928f8f;
+  --color-primary: #aca8a8;
+  --color-secondary: #cecbcb;
   --color-accent: #ffd54f;
   --color-background: #ffffff;
   --color-text: #888b87;
@@ -71,9 +71,9 @@ header {
 
 .tagline {
   font-size: 0.78rem;
-  font-weight: normal;
+  font-weight: bold;
   color: #f3f3f3;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.466);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.568);
 }
 
 nav {
@@ -174,7 +174,7 @@ nav {
   max-width: 700px;
   margin: 0 auto 2rem;
   line-height: 1.6;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.664);
 }
 
 .cta-button {
@@ -208,6 +208,7 @@ nav {
   padding: 5rem 0;
   background: var(--gradient-secondary);
   color: var(--color-background);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.459);
 }
 
 .about h2 {
@@ -242,7 +243,7 @@ nav {
 }
 
 .services-overlay {
-  background-color: rgba(253, 254, 255, 0.829);
+  background-color: rgba(255, 251, 251, 0.952);
   padding: 3rem 0;
 }
 
@@ -250,8 +251,8 @@ nav {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: var(--color-text);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  color: var(--color-sky);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.39);
 }
 
 .index-services-intro {
@@ -261,8 +262,8 @@ nav {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  color: var(--color-text);
-  text-shadow: 1px 1px 2px rgba(20, 20, 20, 0.384);
+  color: var(--color-sky);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.158);
   font-weight: 500;
 }
 
@@ -343,7 +344,7 @@ nav {
 }
 
 .contact-form {
-  background-color: var(--color-soft);
+  background-color: var(--color-light);
   padding: 2rem;
   border-radius: 5px;
   box-shadow: var(--shadow-standard);
@@ -376,7 +377,7 @@ nav {
   padding: 0.75rem;
   border: 1px solid var(--color-light);
   border-radius: 3px;
-  background-color: var(--color-soft);
+  background-color: var(--color-light);
   color: var(--color-background);
   font-size: 16px;
 }
@@ -431,6 +432,7 @@ footer {
   color: var(--color-light);
   margin-bottom: 1rem;
   font-size: 1.2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.521);
 }
 
 .footer-section p,
@@ -446,6 +448,7 @@ footer {
 
 .footer-section ul li {
   margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.589);
 }
 
 .footer-section ul a {
@@ -459,6 +462,7 @@ footer {
 
 .professional-memberships .membership-org {
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.527);
 }
 
 .logo-section {
@@ -514,6 +518,9 @@ footer {
   position: absolute;
   inset: 0;
   background-color: var(--color-soft);
+}
+.emdr-books-heading {
+  margin-top: 1.5rem; /* Adjust this value to increase or decrease the space */
 }
 
 .emdr-page .emdr-intro .container {
@@ -589,9 +596,9 @@ footer {
   position: relative;
   padding: 5rem 0;
   text-align: center;
-  background-image: url("assetsP/ComfyUI_00810_.webp");
+  background-image: url("assetsP/pexels-photo-2437681.jpeg");
   background-size: cover;
-  background-position: center;
+  background-position: t;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -757,12 +764,14 @@ footer {
 .cta-section h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.562);
 }
 
 .cta-section p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   opacity: 0.9;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.637);
 }
 
 /* Animations */
@@ -791,7 +800,7 @@ footer {
   position: relative;
   padding: 3rem 0;
   text-align: center;
-  background-image: url("assetsP/ComfyUI_00793_.webp");
+  background-image: url("assetsP/photo-1721907737945-b7e417a98f70.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -973,7 +982,7 @@ footer {
   position: relative;
   padding: 5rem 0;
   text-align: center;
-  background-image: url("assetsP/ComfyUI_00797_.webp");
+  background-image: url("assetsP/photo-1591552220323-b13c42f38aef.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1014,7 +1023,86 @@ footer {
 .resources-section a:hover {
   text-decoration: underline;
 }
+/* EMDR Resources Section */
+.resources-emdr {
+  margin-bottom: 2rem;
+}
 
+.resources-emdr-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.resources-emdr-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.resources-emdr-image {
+  max-width: 300px;
+  height: auto;
+}
+
+.resources-emdr-books-heading {
+  margin-top: 1.5rem;
+}
+
+.resources-emdr ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.resources-emdr li {
+  margin-bottom: 0.5rem;
+}
+
+.resources-emdr a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .resources-emdr-content {
+    flex-direction: column;
+  }
+
+  .resources-emdr-image {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Organizations and Associations Section */
+.resources-organizations {
+  margin-bottom: 2rem;
+}
+
+.resources-organizations-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.resources-organizations-text {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.resources-organizations-image {
+  max-width: 200px; /* Reduced from 300px to make it smaller */
+  height: auto;
+  align-self: flex-start; /* This will align the image to the top of the container */
+  margin-top: -20px; /* This will move the image up by 20 pixels */
+}
+
+@media (max-width: 768px) {
+  .resources-organizations-content {
+    flex-direction: column;
+  }
+
+  .resources-organizations-image {
+    max-width: 100%;
+    margin-top: -20px;
+  }
+}
 /* Services Page */
 .services-page {
   background: var(--gradient-secondary);
@@ -1027,7 +1115,7 @@ footer {
   position: relative;
   padding: 3rem 0;
   text-align: center;
-  background-image: url("assetsP/treesmany.webp");
+  background-image: url("assetsP/photo-1721052111800-3f84226ddc10.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1059,7 +1147,7 @@ footer {
   font-size: 1.2rem;
   max-width: 800px;
   margin: 0 auto;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.74);
 }
 
 .services-content {
@@ -1091,6 +1179,18 @@ footer {
 .service-image {
   width: 40%;
   flex: 0 0 auto;
+  position: relative;
+}
+
+.service-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.2); /* Faint gray overlay */
+  pointer-events: none; /* Allows clicks to pass through to the image */
 }
 
 .service-image img {
@@ -1127,7 +1227,7 @@ footer {
   position: relative;
   padding: 6rem 0;
   text-align: center;
-  background-image: url("assetsP/ComfyUI_00803_.webp");
+  background-image: url("assetsP/photo-1721570799930-2a68f7760c82.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1138,7 +1238,8 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(81, 185, 255, 0.26);
+  background-color: rgba(118, 121, 122, 0.178);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.959);
 }
 
 .contact-intro .container {
@@ -1162,14 +1263,14 @@ footer {
   font-size: 1.5rem;
   font-weight: 400;
   margin-top: 0.5rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 2px 2px rgb(0, 0, 0);
 }
 
 .contact-intro p {
   font-size: 1.2rem;
   max-width: 800px;
   margin: 0 auto;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 2px 2px rgb(0, 0, 0);
 }
 
 .contact-content {
@@ -1243,8 +1344,8 @@ footer {
 
 /* Updated Contact Form Styles */
 .contact-form {
-  background-color: var(--color-light);
-  color: var(--color-text);
+  background-color: var(--color-pri);
+  color: var(--color-primary);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: var(--shadow-standard);
@@ -1267,7 +1368,7 @@ footer {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: var(--color-primary) !important;
+  color: var(--color-te) !important;
   font-family: var(--font-main);
   font-size: 16px;
 }
