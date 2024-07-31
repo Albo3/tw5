@@ -1,13 +1,13 @@
 /* Root variables */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 :root {
-  --color-primary: #aca8a8;
-  --color-secondary: #cecbcb;
+  --color-primary: #f5f5f5;
+  --color-secondary: #e6ebe6;
   --color-accent: #ffd54f;
   --color-background: #ffffff;
   --color-text: #888b87;
-  --color-light: #f1f8e9;
-  --color-sky: #696b6a;
+  --color-light: #f1fff1;
+  --color-sky: #8ac2a6;
   --color-soft: #6b69697a;
   --font-main: "Nunito", sans-serif;
   --gradient-primary: linear-gradient(
@@ -72,8 +72,8 @@ header {
 .tagline {
   font-size: 0.78rem;
   font-weight: bold;
-  color: #f3f3f3;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.568);
+  color: #7d807b;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.062);
 }
 
 nav {
@@ -90,21 +90,22 @@ nav {
 .logo {
   height: 60px;
   margin-right: 1rem;
-  filter: drop-shadow(0 2px 2px rgba(255, 255, 255, 0.288));
+  filter: drop-shadow(0 2px 2px rgba(255, 255, 255, 0.185));
 }
 
 .logo-container h1 {
   margin-bottom: 0;
   line-height: 1;
   padding-top: 3px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.61);
-  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(70, 75, 69, 0.233);
+  color: #81867f;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.466);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.082);
+  color: #0b140696;
 }
 
 .nav-links li {
@@ -138,21 +139,22 @@ nav {
 /* Hero section */
 .hero {
   position: relative;
+
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 60vh;
   display: flex;
   align-items: center;
   text-align: center;
-  color: var(--color-background);
+  color: (--color-background);
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: var(--color-sky);
-  opacity: 0.7;
+  background: var(--color-primary);
+  opacity: 0.85;
   z-index: 1;
 }
 
@@ -166,7 +168,8 @@ nav {
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.575);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.123);
+  color: #949e93;
 }
 
 .hero p {
@@ -174,7 +177,8 @@ nav {
   max-width: 700px;
   margin: 0 auto 2rem;
   line-height: 1.6;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.664);
+  text-shadow: 1px 1px 1px rgba(76, 80, 77, 0.205);
+  color: #7e857b;
 }
 
 .cta-button {
@@ -215,6 +219,8 @@ nav {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2.5rem;
+  color: #818b81;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.116);
 }
 
 .about-content {
@@ -232,6 +238,8 @@ nav {
 
 .about-text p {
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.082);
+  color: #6a6b6a;
 }
 
 /* Index Services section */
@@ -245,14 +253,16 @@ nav {
 .services-overlay {
   background-color: rgba(255, 251, 251, 0.952);
   padding: 3rem 0;
+  color: #707a70;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0);
 }
 
 .index-services h2 {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: var(--color-sky);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.39);
+  color: #848a83;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39);
 }
 
 .index-services-intro {
@@ -262,7 +272,7 @@ nav {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  color: var(--color-sky);
+  color: (#697966);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.158);
   font-weight: 500;
 }
@@ -425,44 +435,52 @@ footer {
 .footer-section {
   flex: 0 0 30%;
   min-width: 150px;
+
   margin-bottom: 20px;
 }
 
 .footer-section h3 {
-  color: var(--color-light);
   margin-bottom: 1rem;
   font-size: 1.2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.521);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.075);
+  color: #888d88;
 }
 
 .footer-section p,
 .footer-section ul {
   font-size: 0.9rem;
+
   line-height: 1.6;
 }
 
 .footer-section ul {
   list-style: none;
   padding: 0;
+  color: #6a6b6a;
 }
 
 .footer-section ul li {
   margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.589);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.342);
+
+  color: #6a6b6a;
 }
 
 .footer-section ul a {
   transition: var(--transition-standard);
-  color: var(--color-background);
+  color: #8a8d8a; /* Direct color value */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.116);
 }
 
 .footer-section ul a:hover {
-  color: var(--color-accent);
+  color: var(--color-s);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
 }
 
 .professional-memberships .membership-org {
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.527);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.137);
+  color: #8a8d8a; /* Direct color value */
 }
 
 .logo-section {
@@ -764,14 +782,16 @@ footer {
 .cta-section h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.562);
+  color: #8a8d8a; /* Direct color value */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.103); /* Reduced shadow opacity */
 }
 
 .cta-section p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   opacity: 0.9;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.637);
+  color: #555a55; /* Direct color value */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.089);
 }
 
 /* Animations */
