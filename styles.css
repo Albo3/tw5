@@ -361,7 +361,7 @@ nav {
   grid-column: 2 / 3;
   grid-row: 1 / 4;
 }
-.contact-info h3,
+
 .contact-form h3 {
   color: var(--color-light);
   margin-bottom: 1.5rem;
@@ -1336,7 +1336,7 @@ footer {
 }
 
 .contact-content h3 {
-  color: var(--color-primary);
+  color: (#000000);
   font-size: 1.8rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid var(--color-text);
@@ -1372,7 +1372,7 @@ footer {
 }
 
 .contact-form h3 {
-  color: var(--color-primary);
+  color: var(--color-text);
   font-size: 1.8rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid var(--color-text);
@@ -1413,7 +1413,7 @@ footer {
 
 .btn {
   display: inline-block;
-  background-color: var(--color-primary);
+  background-color: #76ac7a;
   color: #ffffff;
   padding: 0.8rem 1.2rem;
   border: none;
