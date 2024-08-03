@@ -535,7 +535,8 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--color-soft);
+  background-color: var(--color-primary);
+  opacity: 0.55;
 }
 .emdr-books-heading {
   margin-top: 1.5rem; /* Adjust this value to increase or decrease the space */
@@ -560,14 +561,14 @@ footer {
   font-size: 1.5rem;
   font-weight: 400;
   margin-top: 0.5rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.781);
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.966);
 }
 
 .emdr-intro p {
   font-size: 1.2rem;
   max-width: 800px;
   margin: 0 auto;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.685);
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.966);
 }
 
 .emdr-content {
@@ -625,7 +626,8 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--color-soft);
+  background-color: var(--color-primary);
+  opacity: 0.25;
 }
 
 .trauma-page .trauma-intro .container {
@@ -639,7 +641,7 @@ footer {
   margin-bottom: 0.5rem;
   font-weight: 700;
   line-height: 1.2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.863);
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.966);
 }
 
 .trauma-intro .trauma-full-title {
@@ -647,14 +649,14 @@ footer {
   font-size: 1.5rem;
   font-weight: 400;
   margin-top: 0.5rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.781);
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.966);
 }
 
 .trauma-intro p {
   font-size: 1.2rem;
   max-width: 800px;
   margin: 0 auto;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.685);
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.966);
 }
 
 .trauma-content {
@@ -831,7 +833,8 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--color-soft);
+  background-color: var(--color-primary);
+  opacity: 0.55;
 }
 
 .ptsd-page .ptsd-intro .container {
@@ -860,7 +863,7 @@ footer {
   font-size: 1.2rem;
   max-width: 800px;
   margin: 0 auto;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.685);
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.925);
 }
 
 .ptsd-content {
@@ -935,14 +938,14 @@ footer {
   font-size: 1.5rem;
   font-weight: 400;
   margin-top: 0.5rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.781);
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.966);
 }
 
 .ptsd-intro p {
   font-size: 1.2rem;
   max-width: 800px;
   margin: 0 auto;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.685);
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.966);
 }
 
 .ptsd-content {
@@ -1013,7 +1016,8 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--color-soft);
+  background-color: var(--color-primary);
+  opacity: 0.45;
 }
 
 .resources-intro .container {
@@ -1025,14 +1029,14 @@ footer {
 .resources-intro h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.966);
 }
 
 .resources-intro p {
   font-size: 1.2rem;
   max-width: 800px;
   margin: 0 auto;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.966);
 }
 
 .resources-content {
@@ -1146,7 +1150,8 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--color-soft);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.438);
+  background-color: rgba(231, 245, 229, 0.432);
 }
 
 .services-intro .container {
@@ -1167,7 +1172,7 @@ footer {
   font-size: 1.2rem;
   max-width: 800px;
   margin: 0 auto;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.74);
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.849);
 }
 
 .services-content {
@@ -1200,6 +1205,8 @@ footer {
   width: 40%;
   flex: 0 0 auto;
   position: relative;
+  background: var(--color-primary);
+  opacity: 0.83;
 }
 
 .service-image::after {
@@ -1258,7 +1265,7 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(118, 121, 122, 0.178);
+  background-color: rgba(231, 245, 229, 0.5);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.959);
 }
 
