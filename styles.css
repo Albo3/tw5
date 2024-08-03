@@ -139,7 +139,7 @@ nav {
 /* Hero section */
 .hero {
   position: relative;
-
+  background-image: url("assetsP/ComfyUI_00772_.webp");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -615,7 +615,7 @@ footer {
   position: relative;
   padding: 5rem 0;
   text-align: center;
-  background-image: url("assetsP/pexels-photo-2437681.jpeg");
+  background-image: url("assetsP/pexels-photo-2437681.webp");
   background-size: cover;
   background-position: t;
   background-repeat: no-repeat;
@@ -822,7 +822,7 @@ footer {
   position: relative;
   padding: 3rem 0;
   text-align: center;
-  background-image: url("assetsP/photo-1721907737945-b7e417a98f70.jpg");
+  background-image: url("assetsP/photo-1721907737945-b7e417a98f70.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1005,7 +1005,7 @@ footer {
   position: relative;
   padding: 5rem 0;
   text-align: center;
-  background-image: url("assetsP/photo-1591552220323-b13c42f38aef.jpg");
+  background-image: url("assetsP/photo-1591552220323-b13c42f38aef.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1139,7 +1139,7 @@ footer {
   position: relative;
   padding: 3rem 0;
   text-align: center;
-  background-image: url("assetsP/photo-1721052111800-3f84226ddc10.jpg");
+  background-image: url("assetsP/photo-1721052111800-3f84226ddc10.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1254,7 +1254,7 @@ footer {
   position: relative;
   padding: 6rem 0;
   text-align: center;
-  background-image: url("assetsP/photo-1721570799930-2a68f7760c82.jpg");
+  background-image: url("assetsP/photo-1721570799930-2a68f7760c82.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
