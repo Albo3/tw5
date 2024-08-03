@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assetsP/
+
+Sitemap: https://www.traumawise.com.au/sitemap.xml
