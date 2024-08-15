@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Clear the form
       contactForm.reset();
       // Show a success message (you might want to style this better)
-      alert("Thank you for your message. We will get back to you soon!");
+      //alert("Thank you for your message. We will get back to you soon!");
     });
   }
 
