@@ -1,25 +1,36 @@
-/_ Root variables _/
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
-:root {
---color-primary: #c9c8c8;
---color-secondary: #a19e9e;
---color-accent: #ffd54f;
---color-background: #ffffff;
---color-text: #888b87;
---color-light: #f1f8e9;
---color-sky: #696b6a;
---color-soft: #c9c8c888;
---font-main: "Nunito", sans-serif;
---gradient-primary: linear-gradient(
-to right,
-var(--color-primary),
-var(--color-secondary)
-);
---gradient-secondary: linear-gradient(
-to bottom,
-var(--color-primary),
-var(--color-secondary)
-);
---shadow-standard: 0 4px 6px rgba(0, 0, 0, 0.1);
---transition-standard: all 0.3s ease;
-}
+## How to Edit Text in HTML Files
+
+### Introduction
+This guide will help you make basic text edits to your website’s HTML files. You can do this directly from this GitHub repository using GitHub’s built-in editor.
+
+### Steps to Edit Text
+
+1. **Open the HTML File You Want to Edit**:
+   - In the repository, you’ll see a list of files and folders. 
+   - Click on the file you want to edit (e.g., `index.html` for the homepage, `contact.html` for the contact page).
+
+2. **Edit the File**:
+   - After clicking the file, click the pencil icon in the top-right corner of the file view. This opens the file in edit mode.
+   - You’ll see a lot of code, but don’t worry! Look for the text you want to change—it will be between `<p>`, `<h1>`, `<h2>`, or other tags. For example:
+
+     ```html
+     <h1>Welcome to My Website</h1>
+     ```
+
+     If you want to change "Welcome to My Website" to something else, just edit the text inside the tags:
+
+     ```html
+     <h1>Edit the text</h1>
+     ```
+
+3. **Save Your Changes**:
+   - Once you’ve made your changes, scroll down to the bottom of the page.
+   - You’ll see a “Commit changes” section. In the “Commit message” field, describe what you changed (e.g., "Updated homepage title").
+   - Make sure the “Commit directly to the `main` branch” option is selected.
+   - Click the green “Commit changes” button.
+
+
+### Important Notes
+- **Backup**: Always double-check before saving your changes. It’s easy to undo mistakes, but it’s better to avoid them.
+- **Formatting**: Be careful not to delete any tags (like `<h1>`, `<p>`, etc.), as this might affect the page’s layout.
+- **Contact for Help**: If you’re unsure about anything or accidentally delete something important, feel free to reach out to me.
