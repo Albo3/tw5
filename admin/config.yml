@@ -3,7 +3,7 @@ backend:
   repo: albo3/tw5
   branch: main
   auth_type: implicit
-  app_id: Iv23liQYnYjvVQpGsa9N # Ensure this is your GitHub OAuth App Client ID
+  app_id: Iv23liQYnYjvVQpGsa9N # Replace with your GitHub OAuth App Client ID
 
 media_folder: "assetsP/images/uploads"
 public_folder: "/assetsP/images/uploads"
