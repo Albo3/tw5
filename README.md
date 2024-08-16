@@ -36,10 +36,9 @@ This guide will help you make basic text edits to your website's HTML files. You
 
 Here's a quick video demonstration of the process:
 
-<video width="800" height="600" controls>
-  <source src="GithubEdits.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
+[Watch the tutorial video](GithubEdits.webm)
+
+If you prefer, you can download the video and watch it locally.
 
 ### Important Notes
 
