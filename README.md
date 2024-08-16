@@ -34,7 +34,7 @@ This guide will help you make basic text edits to your website's HTML files. You
 
 ### Video Tutorial
 
-Here's a quick video demonstration of the process:
+Here's a quick video demonstration of the process: || Play button ------>
 
 ![Watch the tutorial video](gitedit.gif)
 
