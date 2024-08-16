@@ -38,8 +38,6 @@ Here's a quick video demonstration of the process: || Play button ------>
 
 ![Watch the tutorial video](gitedit.gif)
 
-If you prefer, you can download the video and watch it locally.
-
 ### Important Notes
 
 - **Backup**: Always double-check before saving your changes. It's easy to undo mistakes, but it's better to avoid them.
