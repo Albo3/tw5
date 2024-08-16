@@ -36,7 +36,7 @@ This guide will help you make basic text edits to your website's HTML files. You
 
 Here's a quick video demonstration of the process:
 
-[Watch the tutorial video](GithubEdits.webm)
+![Watch the tutorial video](gitedit.gif)
 
 If you prefer, you can download the video and watch it locally.
 
