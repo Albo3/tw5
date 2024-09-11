@@ -30,11 +30,7 @@ This guide will help you make basic text edits to your website's HTML files. You
    - You'll see a "Commit changes" section. In the "Commit message" field, describe what you changed (e.g., "Updated homepage title").
    - Click the "Commit changes" button.
 
-### Video Tutorial
 
-Here's a quick video demonstration of the process: || Play button ------>
-
-![Watch the tutorial video](gitedit.gif)
 
 ### Important Notes
 
