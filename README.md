@@ -32,11 +32,7 @@ This guide will help you make basic text edits to your website's HTML files. You
    - Make sure the "Commit directly to the `main` branch" option is selected.
    - Click the green "Commit changes" button.
 
-### Video Tutorial
 
-Here's a quick video demonstration of the process: || Play button ------>
-
-![Watch the tutorial video](gitedit.gif)
 
 ### Important Notes
 
