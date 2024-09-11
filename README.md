@@ -27,10 +27,8 @@ This guide will help you make basic text edits to your website's HTML files. You
      ```
 
 3. **Save Your Changes**:
-   - Once you've made your changes, scroll down to the bottom of the page.
    - You'll see a "Commit changes" section. In the "Commit message" field, describe what you changed (e.g., "Updated homepage title").
-   - Make sure the "Commit directly to the `main` branch" option is selected.
-   - Click the green "Commit changes" button.
+   - Click the "Commit changes" button.
 
 
 
