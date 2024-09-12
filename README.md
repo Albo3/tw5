@@ -30,8 +30,6 @@ This guide will help you make basic text edits to your website's HTML files. You
    - You'll see a "Commit changes" section. In the "Commit message" field, describe what you changed (e.g., "Updated homepage title").
    - Click the "Commit changes" button.
 
-
-
 ### Important Notes
 
 - **Backup**: Always double-check before saving your changes. It's easy to undo mistakes, but it's better to avoid them.
