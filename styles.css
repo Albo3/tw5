@@ -225,17 +225,28 @@ nav {
 
 .about-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 3rem;
 }
 
 .about-image {
   width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
+  height: auto;
+  object-fit: contain;
 }
 
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+}
 .about-text p {
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.082);
@@ -1621,4 +1632,34 @@ footer {
   line-height: 1.4;
   color: #555a55;
   font-weight: 3200;
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(
+    --color-text
+  ); /* Use the main text color for better contrast */
+  margin: 5px 0;
+  transition: var(--transition-standard);
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Remove the background and add a subtle text shadow instead */
+  .menu-toggle span {
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  }
 }
