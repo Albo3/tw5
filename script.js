@@ -82,3 +82,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Email obfuscation
+document.addEventListener("DOMContentLoaded", function () {
+  const emailElements = document.querySelectorAll(".obfuscated-email");
+  emailElements.forEach((element) => {
+    const name = element.dataset.name;
+    const domain = element.dataset.domain;
+    const tld = element.dataset.tld;
+    element.innerHTML = `${name}&#64;${domain}.${tld}`;
+
+    // Make it clickable
+    element.style.cursor = "pointer";
+    element.addEventListener("click", () => {
+      window.location.href = `mailto:${name}@${domain}.${tld}`;
+    });
+  });
+});
