@@ -19,6 +19,139 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        animation: fadeIn 0.3s ease-out;
+      }
+
+      .modal-content {
+        background-color: var(--color-light);
+        padding: 2rem;
+        border-radius: 8px;
+        max-width: 500px;
+        width: 90%;
+        position: relative;
+        box-shadow: var(--shadow-standard);
+        animation: slideIn 0.3s ease-out;
+      }
+
+      .modal-content h2 {
+        color: var(--color-text);
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      .modal-content p {
+        margin-bottom: 1rem;
+        line-height: 1.6;
+        color: var(--color-text);
+        font-size: 0.95rem;
+      }
+
+      .modal-content a {
+        color: var(--color-sky);
+        text-decoration: underline;
+      }
+
+      .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--color-text);
+        opacity: 0.7;
+        transition: var(--transition-standard);
+      }
+
+      .close-button:hover {
+        opacity: 1;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      @keyframes slideIn {
+        from { 
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to { 
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .notice-wrapper {
+        position: relative;
+        display: inline-block;
+      }
+
+      .notice-popup {
+        display: none;
+        position: absolute;
+        bottom: calc(100% + 15px);
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--color-light);
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: var(--shadow-standard);
+        width: 300px;
+        z-index: 1000;
+        color: var(--color-text);
+        text-align: left;
+        transition: var(--transition-standard);
+      }
+
+      .notice-popup.show {
+        display: block;
+        animation: fadeInUp 0.3s ease-out;
+      }
+
+      .notice-popup::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 10px 10px 0;
+        border-style: solid;
+        border-color: var(--color-light) transparent transparent;
+      }
+
+      .notice-popup p {
+        margin: 0;
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+
+      .notice-popup a {
+        color: var(--color-sky);
+        text-decoration: underline;
+      }
+
+      .disabled-button {
+        opacity: 0.8;
+        cursor: pointer !important;
+        background-color: var(--color-sky) !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -38,6 +171,7 @@
           </a>
         </div>
         <ul class="nav-links">
+          <li><a href="javascript:void(0)" onclick="showModal()" style="color: var(--color-sky);">Notice</a></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="emdr.html">EMDR</a></li>
@@ -68,7 +202,12 @@
             you recover from life threatening events, Post Traumatic Stress
             Disorder, anxiety, addiction, chronic pain and grief and loss.
           </p>
-          <a href="contact.html" class="cta-button">Book an appointment</a>
+          <div class="notice-wrapper">
+            <a href="javascript:void(0)" class="cta-button disabled-button" onclick="toggleNotice(event)">Book an appointment</a>
+            <div class="notice-popup" id="noticePopup">
+              <p><strong>Important Notice:</strong> With much sadness, Traumawise Counselling & Psychotherapy is closing due to health circumstances. Please visit <a href="https://emdraa.org" target="_blank">emdraa.org</a> under "Find A Therapist" to seek alternative practitioners.</p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- END SAFE TO EDIT -->
@@ -310,8 +449,53 @@
     </footer>
 
     <script src="script.js" defer></script>
-  </body>
-</html>
+    <div id="closureNotice" class="modal-overlay">
+      <div class="modal-content">
+        <button class="close-button" onclick="closeModal()">&times;</button>
+        <h2>Important Notice</h2>
+        <p>With much sadness I am informing past, present and future clients that Traumawise Counselling & Psychotherapy is closing due to my challenged health - a renewed and unexpected cancer diagnosis.</p>
+        <p>I have genuinely treasured the journeys we have taken toward healing and so many of these rewarding experiences have made my own life meaningful, worthwhile and purpose filled.</p>
+        <p>It's been a great privilege to be involved as a counsellor and psychotherapist using EMDR and I thank each and every one of you for trusting me to collaborate with you to achieve wholeness.</p>
+        <p>I have loved meeting you and getting to know you as individuals with your own unique gifts, strengths and stories.</p>
+        <p>Please look on the <a href="https://emdraa.org" target="_blank">emdraa.org</a> site under Find A Therapist to seek practitioners who work in a similar way.</p>
+        <p style="margin-top: 1.5rem; text-align: right;">With love and great respect,<br>Cheryl Pratt</p>
+      </div>
+    </div>
+    <script>
+      function closeModal() {
+        document.getElementById('closureNotice').style.display = 'none';
+      }
 
+      function showModal() {
+        document.getElementById('closureNotice').style.display = 'flex';
+      }
+
+      function toggleNotice(event) {
+        event.preventDefault();
+        const popup = document.getElementById('noticePopup');
+        popup.classList.toggle('show');
+      }
+
+      // Close popup when clicking outside
+      document.addEventListener('click', function(event) {
+        const popup = document.getElementById('noticePopup');
+        const modal = document.getElementById('closureNotice');
+        const modalContent = document.querySelector('.modal-content');
+        const button = event.target.closest('.disabled-button');
+        
+        // Handle the small popup
+        if (!button && popup.classList.contains('show')) {
+          popup.classList.remove('show');
+        }
+        
+        // Handle the modal
+        if (modal && event.target === modal) {
+          closeModal();
+        }
+      });
+
+      // Show modal on page load
+      window.addEventListener('load', showModal);
+    </script>
   </body>
 </html>
